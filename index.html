@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url('https://img.freepik.com/free-vector/sky-background-video-conferencing_23-2148623068.jpg?semt=ais_hybrid');
+        background-repeat: no-repeat;
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    }
+    .container{
+        width: 400px;
+        height: 70%;
+        /* border: 3px solid black; */
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(33, 112, 112, 0.445);
+        color: black;
+    }
+    .heading{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .inp{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 10px;
+        align-items: center;
+
+    }
+    #inp{
+        width: 70%;
+        height: 45px;
+        text-align: center;
+        font-size: 1rem;
+        background-color: white;
+        border: none;
+        color: black;
+        border-radius: 5px;
+        outline: none;
+    }
+    #inp::placeholder{
+        color: black;
+    }
+    #btn{
+        width: 20%;
+        height: 45px;
+        font-size: 1rem;
+        font-weight: 400;
+        background-color: white;
+        border: none;
+        color: black;
+        border-radius: 5px;
+    }
+    .weather{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+
+        
+    }
+    #img{
+        
+        height: 150px;
+        width: 150px;
+    }
+    #name{
+        padding-top: 40px;
+        text-align: center;
+
+    }
+    #tem, #con{
+        font-size: 1.25rem;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <div class="heading"> <h1>Weather App</h1></div>
+       
+        <div class="inp">
+            <input type="text" name="" id="inp" placeholder="Enter County Name">
+            <button id="btn">Add</button>
+            
+
+            
+        </div>
+        <div  class="weather">
+            
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
